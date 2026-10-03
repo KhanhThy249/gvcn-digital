@@ -1,0 +1,188 @@
+﻿:root {
+  /* === PRIMITIVES === */
+  /* Colors - Indigo/Success/Warning/Danger/Neutral */
+  --color-indigo-400: #818CF8;
+  --color-indigo-500: #6366F1;
+  --color-indigo-600: #4F46E5;
+  --color-indigo-700: #4338CA;
+  --color-green-500: #22C55E;
+  --color-green-600: #16A34A;
+  --color-green-700: #15803D;
+  --color-amber-500: #F59E0B;
+  --color-amber-600: #D97706;
+  --color-red-500: #EF4444;
+  --color-red-600: #DC2626;
+  --color-red-700: #B91C1C;
+  --color-blue-500: #3B82F6;
+  --color-blue-600: #2563EB;
+  --color-zinc-50: #FAFAFA;
+  --color-zinc-100: #F5F7FA;
+  --color-zinc-200: #E5E7EB;
+  --color-zinc-300: #D1D5DB;
+  --color-slate-50: #F8FAFC;
+  --color-slate-100: #F1F5F9;
+  --color-slate-200: #E2E8F0;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1F2937;
+  --color-slate-900: #111827;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Typography */
+  --font-family-heading: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-family-body: "Noto Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.75rem;
+  --font-size-4xl: 2rem;
+  --font-size-5xl: 2.25rem;
+
+  /* Line heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+
+  /* Spacing (4pt scale) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+
+  /* Durations */
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+}
+/* === SEMANTIC TOKENS === */
+:root {
+  /* Brand/Action */
+  --color-primary: var(--color-indigo-500);
+  --color-on-primary: var(--color-black);
+  --color-primary-soft: #F0F7FF;
+  --color-primary-hover: var(--color-indigo-600);
+  --color-primary-active: var(--color-indigo-700);
+
+  --color-secondary: var(--color-indigo-400);
+  --color-on-secondary: var(--color-slate-900);
+
+  --color-accent: var(--color-green-600);
+  --color-on-accent: var(--color-black);
+
+  /* Status */
+  --color-success: var(--color-green-600);
+  --color-warning: var(--color-amber-500);
+  --color-info: var(--color-blue-600);
+  --color-destructive: var(--color-red-600);
+  --color-on-destructive: var(--color-white);
+
+  /* Surfaces */
+  --color-background: var(--color-zinc-100);
+  --color-foreground: var(--color-slate-800);
+  --color-surface: var(--color-white);
+  --color-card: var(--color-white);
+  --color-card-foreground: var(--color-slate-800);
+
+  /* Subtles */
+  --color-muted: var(--color-slate-100);
+  --color-muted-foreground: var(--color-slate-600);
+  --color-border: var(--color-zinc-200);
+  --color-ring: var(--color-indigo-500);
+
+  /* Typography */
+  --typography-font-heading: var(--font-family-heading);
+  --typography-font-body: var(--font-family-body);
+}
+/* === COMPONENT TOKENS === */
+:root {
+  /* Button */
+  --button-bg: var(--color-primary);
+  --button-fg: var(--color-on-primary);
+  --button-hover-bg: var(--color-primary-hover);
+  --button-active-bg: var(--color-primary-active);
+  --button-radius: var(--radius-md);
+  --button-padding-x: var(--space-4);
+  --button-padding-y: var(--space-2);
+  --button-font-size: var(--font-size-sm);
+  --button-font-weight: var(--font-weight-medium);
+
+  /* Card */
+  --card-bg: var(--color-card);
+  --card-fg: var(--color-card-foreground);
+  --card-border: var(--color-border);
+  --card-radius: var(--radius-lg);
+  --card-shadow: var(--shadow-md);
+  --card-padding: var(--space-6);
+
+  /* Badge/Chip */
+  --badge-bg-success: var(--color-success);
+  --badge-bg-warning: var(--color-warning);
+  --badge-bg-danger: var(--color-destructive);
+  --badge-bg-info: var(--color-info);
+  --badge-fg: var(--color-white);
+  --badge-radius: var(--radius-full);
+  --badge-padding-x: var(--space-2);
+  --badge-padding-y: var(--space-1);
+  --badge-font-size: var(--font-size-xs);
+
+  /* Input */
+  --input-bg: var(--color-white);
+  --input-border: var(--color-border);
+  --input-fg: var(--color-foreground);
+  --input-radius: var(--radius-md);
+  --input-padding-x: var(--space-3);
+  --input-padding-y: var(--space-2);
+  --input-focus-ring: var(--color-ring);
+
+  /* Sidebar/Header */
+  --sidebar-bg: var(--color-white);
+  --sidebar-border: var(--color-border);
+  --header-bg: var(--color-white);
+  --header-border: var(--color-border);
+
+  /* Evidence Card (Hero) */
+  --evidence-card-border: var(--color-border);
+  --evidence-card-bg: var(--color-card);
+  --evidence-card-radius: var(--radius-xl);
+  --evidence-card-shadow: var(--shadow-md);
+  --evidence-card-padding: var(--space-6);
+}
